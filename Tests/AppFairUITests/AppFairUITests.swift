@@ -5,15 +5,15 @@
 import XCTest
 import OSLog
 import Foundation
-@testable import AppFairApp
+@testable import AppFairUI
 
-let logger: Logger = Logger(subsystem: "AppFairApp", category: "Tests")
+let logger: Logger = Logger(subsystem: "AppFairUI", category: "Tests")
 
 @available(macOS 13, *)
-final class AppFairAppTests: XCTestCase {
+final class AppFairUITests: XCTestCase {
 
-    func testAppFairApp() throws {
-        logger.log("running testAppFairApp")
+    func testAppFairUI() throws {
+        logger.log("running testAppFairUI")
         XCTAssertEqual(1 + 2, 3, "basic test")
     }
 
@@ -21,7 +21,7 @@ final class AppFairAppTests: XCTestCase {
         // load the TestData.json file from the Resources folder and decode it into a struct
         let resourceURL: URL = try XCTUnwrap(Bundle.module.url(forResource: "TestData", withExtension: "json"))
         let testData = try JSONDecoder().decode(TestData.self, from: Data(contentsOf: resourceURL))
-        XCTAssertEqual("AppFairApp", testData.testModuleName)
+        XCTAssertEqual("AppFairUI", testData.testModuleName)
     }
 
 }
