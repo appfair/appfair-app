@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "About %@" : {
+
+    },
+    "About the App Fair Project" : {
+
+    },
+    "App info" : {
+
+    },
+    "App info about %@" : {
+
+    },
     "Appearance" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -87,6 +99,9 @@
           }
         }
       }
+    },
+    "Help and Support" : {
+
     },
     "Home" : {
       "extractionState" : "stale",
@@ -204,6 +219,9 @@
         }
       }
     },
+    "Project Home" : {
+
+    },
     "Settings" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -233,6 +251,9 @@
         }
       }
     },
+    "Support this app…" : {
+
+    },
     "System" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -261,6 +282,12 @@
           }
         }
       }
+    },
+    "Translate this app…" : {
+
+    },
+    "Translations" : {
+
     },
     "Welcome" : {
       "extractionState" : "stale",
