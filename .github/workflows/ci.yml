@@ -1,3 +1,4 @@
+name: ci
 on:
   push:
     branches: '*'
@@ -12,4 +13,6 @@ permissions:
 
 jobs:
   call-workflow:
-    uses: skiptools/actions/.github/workflows/skip-framework.yml@v1
+    uses: skiptools/actions/.github/workflows/skip-framework.yml@emulator-testin
+g
+    #uses: skiptools/actions/.github/workflows/skip-framework.yml@v1
