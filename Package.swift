@@ -15,11 +15,11 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.2.23"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0")
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
     ],
     targets: [
         .target(name: "AppFairUI", dependencies: [
-            .product(name: "SkipUI", package: "skip-ui")
+            .product(name: "SkipUI", package: "skip-ui"),
         ], resources: [.process("Resources")], plugins: [.plugin(name: "skipstone", package: "skip")]),
         .testTarget(name: "AppFairUITests", dependencies: [
             "AppFairUI",

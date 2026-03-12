@@ -14,6 +14,7 @@ let appIdentifier = (Bundle.main.infoDictionary?["CFBundleIdentifier"] as? Strin
 
 let appToken = (appIdentifier.split(separator: ".").last?.description ?? "Unknown").replacingOccurrences(of: "_", with: "-")
 
+// FIXME: this only works in cases where the
 let appRepository = URL(string: "https://github.com/\(appToken)/\(appToken)")!
 
 /// A top-level settings view that presents a Form with app settings, along with information about the App Fair Project
@@ -50,12 +51,11 @@ public struct AppFairSettings<Content: View>: View {
     }
 }
 
-/// A `NavigationLink` item that automatically opens the given URL when it is navigated to
-///
-/// This differs from simply using a `Link`, as it styles the item as a standard navigation element.
+/// A button that opens the given URL in an embedded browser (SFSafariViewController on iOS, Chrome Custom Tabs on Android).
 struct NavigationURLLink: View {
     let title: LocalizedStringKey
     let destination: URL
+    @State private var isPresented = false
 
     var body: some View {
         // looks right on iOS, but doesn't work on Android
