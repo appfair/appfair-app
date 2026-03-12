@@ -13,6 +13,5 @@ permissions:
 
 jobs:
   call-workflow:
-    uses: skiptools/actions/.github/workflows/skip-framework.yml@emulator-testin
-g
+    uses: skiptools/actions/.github/workflows/skip-framework.yml@emulator-testing
     #uses: skiptools/actions/.github/workflows/skip-framework.yml@v1
