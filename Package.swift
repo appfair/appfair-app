@@ -9,8 +9,8 @@ let package = Package(
         .library(name: "AppFairUI", type: .dynamic, targets: ["AppFairUI"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "1.2.23"),
-        .package(url: "https://source.skip.tools/skip-kit.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.8.6"),
+        .package(url: "https://source.skip.tools/skip-kit.git", from: "1.0.3"),
     ],
     targets: [
         .target(name: "AppFairUI", dependencies: [

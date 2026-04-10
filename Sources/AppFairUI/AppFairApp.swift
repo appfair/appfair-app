@@ -57,7 +57,7 @@ public struct AppFairSettings<Content: View>: View {
                     //    Text("Translate this app…")
                     //}
 
-                    if let bundle = bundle, SBOMDocument.bundleContainsSBOM(bundle) {
+                    if let bundle = bundle, SBOMView.bundleContainsSBOM(bundle) {
                         NavigationLink("Bill of Materials") {
                             SBOMView(bundle: bundle)
                         }
