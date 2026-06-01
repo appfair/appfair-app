@@ -66,7 +66,7 @@ public struct AppFairSettings<Content: View>: View {
                     NavigationURLLink(title: LocalizedStringKey("Project Home"), destination: appRepository)
                 }
             }
-            .navigationTitle("\(appName) \(appVersion)")
+            .navigationTitle(appName)
         }
     }
 }
@@ -89,7 +89,7 @@ struct NavigationURLLink: View {
 //        }
     }
 
-    private struct NavigationURLLinkDestinationView: View {
+    struct NavigationURLLinkDestinationView: View {
         @Environment(\.openURL) var openURL
         @Environment(\.dismiss) var dismiss
         let title: LocalizedStringKey
