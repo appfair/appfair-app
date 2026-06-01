@@ -24,6 +24,7 @@ let appRepository = URL(string: "https://github.com/\(appToken)/\(appToken)")!
 /// (`sbom-darwin-ios.spdx.json` on Apple, `sbom-linux-android.spdx.json` on Android), the
 /// settings view also exposes a "Bill of Materials" navigation entry that opens an
 /// `SBOMView` for the bundled dependencies and their licenses.
+// SKIP @nobridge
 public struct AppFairSettings<Content: View>: View {
     let content: Content
     let bundle: Bundle?
@@ -63,7 +64,7 @@ public struct AppFairSettings<Content: View>: View {
                         }
                     }
 
-                    NavigationURLLink(title: LocalizedStringKey("Project Home"), destination: appRepository)
+                    //NavigationURLLink(title: LocalizedStringKey("Project Home"), destination: appRepository)
                 }
             }
             .navigationTitle(appName)
